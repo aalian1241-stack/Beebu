@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Beebu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nosell-bar">Free shipping on orders above PKR 1500! 🎉</div>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><img src="assets/Beebu_logo.png" alt="Beebu" style="height:32px;width:auto;"><span style="font-size:1.4rem;font-weight:800;color:var(--blue)">Beebu</span></a>
+            <nav class="nav">
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+                    <button class="icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="badge" id="wishBadge">0</span></button>
+                    <button class="icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="badge" id="cartBadge">0</span></button>
+                    <button class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')"><span></span><span></span><span></span></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="page-header"><div class="container"><h1>Contact Us</h1><p>We'd love to hear from you</p></div></div>
+    <main class="page-content section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 style="font-size:1.5rem;color:var(--blue);margin-bottom:24px">Get in Touch</h2>
+                    <div style="display:flex;flex-direction:column;gap:16px">
+                        <div style="display:flex;align-items:start;gap:16px;padding:20px;background:var(--off-white);border-radius:var(--radius)"><span style="font-size:1.5rem">📍</span><div><h4 style="font-weight:700;color:var(--blue)">Address</h4><p style="color:var(--gray);font-size:0.9rem">Rahimabad, Rawalpindi, 46000, Pakistan</p></div></div>
+                        <div style="display:flex;align-items:start;gap:16px;padding:20px;background:var(--off-white);border-radius:var(--radius)"><span style="font-size:1.5rem">📞</span><div><h4 style="font-weight:700;color:var(--blue)">Phone</h4><p style="color:var(--gray);font-size:0.9rem">(051) 123-4567</p></div></div>
+                        <div style="display:flex;align-items:start;gap:16px;padding:20px;background:var(--off-white);border-radius:var(--radius)"><span style="font-size:1.5rem">✉️</span><div><h4 style="font-weight:700;color:var(--blue)">Email</h4><p style="color:var(--gray);font-size:0.9rem">hello@beebu.com</p></div></div>
+                        <div style="display:flex;align-items:start;gap:16px;padding:20px;background:var(--off-white);border-radius:var(--radius)"><span style="font-size:1.5rem">🕐</span><div><h4 style="font-weight:700;color:var(--blue)">Hours</h4><p style="color:var(--gray);font-size:0.9rem">Mon–Sat: 9AM – 8PM</p></div></div>
+                    </div>
+                </div>
+                <div class="contact-form-card" style="background:var(--white);padding:32px;border-radius:var(--radius-lg);box-shadow:var(--shadow)">
+                    <h2 style="font-size:1.5rem;color:var(--blue);margin-bottom:24px">Send us a message</h2>
+                    <form onsubmit="handleContact(event)" style="display:flex;flex-direction:column;gap:16px">
+                        <input type="text" placeholder="Your Name" required style="padding:14px 18px;border:2px solid #E2E8F0;border-radius:var(--radius);font-size:1rem;outline:none;transition:border 0.3s">
+                        <input type="email" placeholder="Your Email" required style="padding:14px 18px;border:2px solid #E2E8F0;border-radius:var(--radius);font-size:1rem;outline:none">
+                        <input type="text" placeholder="Subject" style="padding:14px 18px;border:2px solid #E2E8F0;border-radius:var(--radius);font-size:1rem;outline:none">
+                        <textarea rows="5" placeholder="Your Message..." required style="padding:14px 18px;border:2px solid #E2E8F0;border-radius:var(--radius);font-size:1rem;outline:none;resize:vertical"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand"><img src="assets/Beebu_logo.png" alt="Beebu" style="height:24px;width:auto;"> Beebu</div></div></div><div class="footer-bottom"><p>&copy; 2024 Beebu</p></div></div></footer>
+    <script src="main.js"></script>
+</body>
+</html>

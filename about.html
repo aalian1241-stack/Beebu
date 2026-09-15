@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Beebu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nosell-bar">Free shipping on orders above PKR 1500! 🎉</div>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><img src="assets/Beebu_logo.png" alt="Beebu" style="height:32px;width:auto;"><span style="font-size:1.4rem;font-weight:800;color:var(--blue)">Beebu</span></a>
+            <nav class="nav">
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button>
+                    <button class="icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="badge" id="wishBadge">0</span></button>
+                    <button class="icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="badge" id="cartBadge">0</span></button>
+                    <button class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')"><span></span><span></span><span></span></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="page-header"><div class="container"><h1>About Beebu</h1><p>Our story, mission, and commitment to quality</p></div></div>
+    <main class="page-content section">
+        <div class="container">
+            <div class="about-inner">
+                <div>
+                    <h2 class="section-title" style="text-align:left">Our Story</h2>
+                    <p style="color:var(--gray);line-height:1.8;margin-bottom:16px">Beebu was founded in 2024 with a simple belief: every moment deserves a sweet treat. We craft chocolate and candy using the finest ingredients sourced from trusted producers worldwide.</p>
+                    <p style="color:var(--gray);line-height:1.8;margin-bottom:32px">Our mission is to bring joy to families across Pakistan — one delicious bite at a time. Every product undergoes rigorous quality control.</p>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                        <div style="background:var(--off-white);padding:24px;border-radius:var(--radius);text-align:center"><div style="font-size:2rem;font-weight:800;color:var(--blue)">2024</div><div style="font-size:0.85rem;color:var(--gray)">Founded</div></div>
+                        <div style="background:var(--off-white);padding:24px;border-radius:var(--radius);text-align:center"><div style="font-size:2rem;font-weight:800;color:var(--blue)">10K+</div><div style="font-size:0.85rem;color:var(--gray)">Happy Customers</div></div>
+                    </div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:center;background:var(--off-white);border-radius:var(--radius-lg);aspect-ratio:1"><img src="assets/Beebu_Chocolate_balls.png" style="max-width:80%;max-height:80%" alt="Beebu"></div>
+            </div>
+            <div style="margin-top:60px"><h2 class="section-title" style="text-align:center">Our Values</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:32px">
+                <div style="background:var(--white);padding:32px;border-radius:var(--radius-lg);box-shadow:var(--shadow);text-align:center"><div style="font-size:2.5rem;margin-bottom:16px">🌿</div><h3 style="font-weight:700;color:var(--blue);margin-bottom:8px">Premium Quality</h3><p style="color:var(--gray);font-size:0.9rem">Finest ingredients</p></div>
+                <div style="background:var(--white);padding:32px;border-radius:var(--radius-lg);box-shadow:var(--shadow);text-align:center"><div style="font-size:2.5rem;margin-bottom:16px">💎</div><h3 style="font-weight:700;color:var(--blue);margin-bottom:8px">Trust</h3><p style="color:var(--gray);font-size:0.9rem">Quality guaranteed</p></div>
+                <div style="background:var(--white);padding:32px;border-radius:var(--radius-lg);box-shadow:var(--shadow);text-align:center"><div style="font-size:2.5rem;margin-bottom:16px">🌍</div><h3 style="font-weight:700;color:var(--blue);margin-bottom:8px">Nationwide</h3><p style="color:var(--gray);font-size:0.9rem">All of Pakistan</p></div>
+                <div style="background:var(--white);padding:32px;border-radius:var(--radius-lg);box-shadow:var(--shadow);text-align:center"><div style="font-size:2.5rem;margin-bottom:16px">♻️</div><h3 style="font-weight:700;color:var(--blue);margin-bottom:8px">Sustainability</h3><p style="color:var(--gray);font-size:0.9rem">Eco-friendly</p></div>
+            </div></div>
+        </div>
+    </main>
+    <footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand"><img src="assets/Beebu_logo.png" alt="Beebu" style="height:24px;width:auto;"> Beebu</div></div></div><div class="footer-bottom"><p>&copy; 2024 Beebu</p></div></div></footer>
+    <script src="main.js"></script>
+</body>
+</html>
